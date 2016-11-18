@@ -8,12 +8,30 @@
 
 /********** Base styles **********/
 * {
-  box-sizing: border-box;
+  box-sizing:content-box;
 }
 h1 {
   margin-bottom: 15px;
 }
-
+.title {
+  float: right;
+  border: 1px solid black;
+  margin-top: 0px;
+  width: 100px;
+  text-align: center;
+}
+.section {
+  clear: right;
+  padding-left: 10px;
+}
+.box {
+  border: 1px solid black;
+  background-color: grey;
+  overflow:hidden;
+  height: 150px;
+  margin: 5px;
+}
+/*
 p {
   border: 1px solid black;
   background-color: #A52A2A;
@@ -24,6 +42,7 @@ p {
   font-family: Helvetica;
   color: white;
 }
+*/
 
 /* Simple Responsive Framework. */
 .row {
@@ -34,7 +53,6 @@ p {
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -78,7 +96,6 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
   }
   .col-md-1 {
     width: 8.33%;
@@ -122,7 +139,7 @@ p {
 @media (max-width: 767px) {
   .col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
     float: left;
-    border: 1px solid green;
+
   }
   .col-sd-1 {
     width: 8.33%;
@@ -165,18 +182,30 @@ p {
 </style>
 </head>
 <body>
-<h1>Responsive Layout</h1>
+<h1>Our menu</h1>
 
 <div class="row">
-  <div class="col-lg-4 col-md-6 col-sd-12"><p>
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  <div class="col-lg-4 col-md-6 col-sd-12">
+    <div class="box">
+    <p class="title" style="background-color: yellow;">Chicken</p>
+    <p class="section">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </p></div>
-  <div class="col-lg-4 col-md-6 col-sd-12"><p>
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+  <div class="col-lg-4 col-md-6 col-sd-12 ">
+      <div class="box">
+    <p class="title" style="background-color: green;color:white;">Beef</p>
+    <p class="section">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
   </p></div>
-  <div class="col-lg-4 col-md-12 col-sd-12"><p>
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+</div>
+  <div class="col-lg-4 col-md-12 col-sd-12">
+      <div class="box">
+    <p class="title" style="background-color: brown;">Sushi</p>
+    <p class="section">
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
   </p></div>
+</div>
 </div>
 
 </body>

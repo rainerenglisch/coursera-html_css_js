@@ -6,12 +6,23 @@
 h1 {
   margin-bottom: 15px;
 }
+.chicken {
+   background-color: LightPink ;
+}
+.beef {
+  background-color: brown;
+  color:white;
+}
+.sushi {
+  background-color: DarkKhaki ;
+}
 .title {
   float: right;
   border: 1px solid black;
   margin-top: 0px;
   width: 100px;
   text-align: center;
+  font-weight: bold;
 }
 .section {
   clear: right;
